@@ -1,1 +1,94 @@
-skjfkl
+# Contact Manager Backend
+
+A simple and robust backend API for managing contacts. Built with Node.js and Express, this project provides CRUD functionalities for contact management, user authentication, and secure data handling.
+
+---
+
+## Features
+
+1. **User Authentication**
+   - Secure login and registration using JWT tokens.
+   - Password hashing for user data protection.
+
+2. **Contact Management**
+   - Create, Read, Update, and Delete (CRUD) operations for contacts.
+   - Each user has access only to their own contacts.
+
+3. **RESTful API**
+   - Clean RESTful endpoints for all operations.
+   - Uses standard HTTP methods and status codes.
+
+4. **Validation & Error Handling**
+   - Input validation to prevent bad data.
+   - Consistent error responses for easy debugging.
+
+5. **Environment Configuration**
+   - Use of `.env` file for sensitive credentials and environment variables.
+
+---
+
+## Technologies Used
+
+- **Node.js**
+- **Express.js**
+- **MongoDB** (via Mongoose)
+- **JWT** for authentication
+- **bcrypt** for password hashing
+
+---
+
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Adarsh01302/contact-manager-backend.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables**
+   - Copy `.env.example` to `.env` and update values as required.
+
+4. **Run the Server**
+   ```bash
+   npm start
+   ```
+   The server will start on the port specified in your `.env` file.
+
+---
+
+## API Endpoints
+
+- `POST /api/auth/register` &mdash; Register a new user
+- `POST /api/auth/login` &mdash; Login and get JWT token
+- `GET /api/contacts` &mdash; Fetch all contacts (for logged in user)
+- `POST /api/contacts` &mdash; Create a new contact
+- `PUT /api/contacts/:id` &mdash; Update a contact
+- `DELETE /api/contacts/:id` &mdash; Delete a contact
+
+*All endpoints except registration and login require authentication.*
+
+---
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## Contact
+
+For questions or suggestions, please create an issue or contact [Adarsh01302](https://github.com/Adarsh01302).
